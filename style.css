@@ -1,0 +1,68 @@
+body {
+    background-color: #ffe6ec;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.buttons {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    box-shadow: 0 0 20px rgba(0,128,0,0.8);
+}
+
+#yesBtn {
+    background-color: green;
+    color: white;
+}
+
+#noBtn {
+    background-color: red;
+    color: white;
+}
+
+.bear {
+    width: 200px;
+    margin-top: 20px;
+}
+
+/* Animation des cœurs */
+@keyframes floatUp {
+    from { transform: translateY(0); opacity:1; }
+    to { transform: translateY(-120vh); opacity:0; }
+}
+
+/* Tremblement du bouton Oui */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
